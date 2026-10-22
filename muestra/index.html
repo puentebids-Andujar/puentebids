@@ -28,13 +28,16 @@ a{color:var(--navy)}
 .tag{display:inline-block;background:#FDEBD9;color:#9A4E0E;font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:999px;margin-bottom:8px}
 /* la "hoja" */
 .sheet{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:10px;box-shadow:0 10px 30px rgba(11,26,51,.10);padding:28px 24px;margin-top:18px;overflow:hidden}
-.sheet:before{content:"SAMPLE · MUESTRA";position:absolute;right:-40px;top:28px;transform:rotate(35deg);background:var(--orange);color:#fff;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:13px;letter-spacing:.14em;padding:6px 60px;opacity:.95}
+.sheet:before{content:"SAMPLE · MUESTRA";position:absolute;right:-44px;bottom:34px;transform:rotate(-35deg);background:var(--orange);color:#fff;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:13px;letter-spacing:.14em;padding:6px 60px;opacity:.95}
 .head{display:flex;gap:16px;align-items:center;border-bottom:4px solid var(--orange);padding-bottom:16px;margin-bottom:18px;flex-wrap:wrap}
 .mark{width:64px;height:64px;border-radius:12px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:26px;letter-spacing:.04em;flex:none}
 .head h2{font-family:"Barlow Condensed",sans-serif;font-size:30px;line-height:1;margin:0;color:var(--navy)}
 .head .sub{color:var(--muted);font-size:14px;margin-top:4px}
 .head .doc{margin-left:auto;text-align:right;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em;font-weight:700}
 .head .doc b{display:block;color:var(--orange);font-size:14px}
+.bid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px 14px;background:#F6F8FB;border:1px solid var(--line);border-left:4px solid var(--navy);border-radius:8px;padding:10px 14px;margin:-6px 0 18px;font-size:13px}
+.bid span{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.bid b{color:var(--navy)}
 .grid{display:grid;grid-template-columns:1.4fr 1fr;gap:22px}
 h3{font-family:"Barlow Condensed",sans-serif;font-size:17px;letter-spacing:.08em;text-transform:uppercase;color:var(--orange);margin:0 0 6px;padding-bottom:4px;border-bottom:1px solid var(--line)}
 section{margin-bottom:18px}
@@ -63,7 +66,7 @@ li{margin:3px 0}
 .btn.wa{background:#25D366;color:#fff}
 .btn.mail{background:var(--navy);color:#fff}
 .note{font-size:13px;color:var(--muted);margin-top:10px}
-@media (max-width:640px){.grid{grid-template-columns:1fr}.two{grid-template-columns:1fr}.head .doc{margin-left:0;text-align:left}.sheet{padding:22px 16px}.sheet:before{right:-52px;top:18px;font-size:11px}}
+@media (max-width:640px){.bid{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.two{grid-template-columns:1fr}.head .doc{margin-left:0;text-align:left}.sheet{padding:22px 16px}.sheet:before{right:-54px;bottom:26px;font-size:11px}}
 @media print{.top,.intro,.why{display:none}body{background:#fff}.sheet{box-shadow:none;border:0;margin:0}}
 </style>
 </head>
@@ -92,6 +95,11 @@ li{margin:3px 0}
       </div>
       <div class="doc">Capability Statement<b>Division 03 — Concrete</b></div>
     </div>
+    <div class="bid">
+      <div><span>Bid contact</span><b>Juan Rivera</b>, Owner / Estimator</div>
+      <div><span>Phone · Email</span><b>(713) 555-0142</b> · bids@riveraconcrete-example.com</div>
+      <div><span>Response</span><b>Written line-item quotes within 24 hours</b> · English / Spanish</div>
+    </div>
 
     <div class="grid">
       <div>
@@ -117,20 +125,21 @@ li{margin:3px 0}
         </section>
 
         <section>
-          <h3>Why GCs Invite Us</h3>
+          <h3>Differentiators</h3>
           <ul>
-            <li>Written, line-item quotes within 24 hours of receiving plans</li>
+            <li>Self-perform 100% of our scope — no second-tier subs</li>
             <li>Same crew from estimate to final pour — no hand-offs</li>
             <li>Bilingual superintendent on every job (English / Spanish)</li>
-            <li>Typical project size: $20,000 – $350,000</li>
+            <li>Prequal ready: COMPASS 1Form or TradeTapp completed within 48 hours of request</li>
           </ul>
         </section>
 
         <section>
-          <h3>Recent Projects</h3>
-          <div class="proj"><b>Retail center — drive &amp; parking apron</b><small>Humble, TX · 2026 · 18,000 SF of site concrete, ADA ramps</small></div>
-          <div class="proj"><b>Warehouse slab-on-grade</b><small>Katy, TX · 2025 · 42,000 SF, 6" slab, 4,000 PSI</small></div>
-          <div class="proj"><b>Multifamily foundations, 3 buildings</b><small>Spring, TX · 2025 · post-tension slabs, grade beams</small></div>
+          <h3>Past Performance</h3>
+          <div class="proj"><b>Retail center — drive &amp; parking apron · Humble, TX</b><small>GC: Example Builders LLC · $185,000 · Mar 2026 · 18,000 SF site concrete, ADA ramps</small></div>
+          <div class="proj"><b>Warehouse slab-on-grade · Katy, TX</b><small>GC: Sample Construction Co. · $240,000 · Sep 2025 · 42,000 SF, 6" slab, 4,000 PSI</small></div>
+          <div class="proj"><b>Multifamily foundations, 3 buildings · Spring, TX</b><small>GC: Demo General Contractors · $410,000 · Feb 2025 · post-tension slabs, grade beams</small></div>
+          <p style="font-size:13px;color:var(--muted);margin:6px 0 0">GC references with phone and email available on request.</p>
         </section>
       </div>
 
@@ -138,32 +147,44 @@ li{margin:3px 0}
         <section>
           <h3>Company Data</h3>
           <div class="kv">
-            <div><span>Legal name</span><span>Rivera Concrete &amp; Flatwork LLC</span></div>
-            <div><span>Year established</span><span>2009</span></div>
-            <div><span>Employees</span><span>14</span></div>
-            <div><span>NAICS</span><span>238110</span></div>
-            <div><span>Service area</span><span>Houston metro (60 mi)</span></div>
-            <div><span>Bonding</span><span>Available on request</span></div>
+            <div><span>Legal name</span><span>Rivera Concrete &amp; Flatwork LLC (Texas LLC)</span></div>
+            <div><span>Established</span><span>2009 · W-9 on file</span></div>
+            <div><span>Team</span><span>14 · 2 crews · 1 supt. · 1 estimator</span></div>
+            <div><span>2025 volume</span><span>$1.8M</span></div>
+            <div><span>Project size</span><span>Typical $20K–$350K · Largest $410K</span></div>
+            <div><span>NAICS · CSI</span><span>238110 · 03 30 00 · 32 13 13</span></div>
+            <div><span>Service area</span><span>Harris, Fort Bend, Montgomery, Brazoria, Galveston</span></div>
           </div>
         </section>
 
         <section>
           <h3>Safety &amp; Insurance</h3>
           <div class="kv">
-            <div><span>General liability</span><span>$1M / $2M</span></div>
-            <div><span>Workers' comp</span><span>Yes</span></div>
-            <div><span>Auto</span><span>$1M</span></div>
-            <div><span>OSHA</span><span>OSHA 30 (supt.) · OSHA 10 (crew)</span></div>
-            <div><span>EMR</span><span>0.89</span></div>
+            <div><span>General liability</span><span>$1M / $2M agg.</span></div>
+            <div><span>Auto · Umbrella</span><span>$1M · $1M</span></div>
+            <div><span>Workers' comp</span><span>Statutory · EL $1M</span></div>
+            <div><span>AI / waiver</span><span>Per GC requirements</span></div>
+            <div><span>EMR (3 yrs)</span><span>0.89 · 0.92 · 0.95</span></div>
+            <div><span>TRIR 2025</span><span>0.0 · OSHA 300A available</span></div>
+            <div><span>Training</span><span>OSHA 30 (supt.) · OSHA 10 (crew)</span></div>
+            <div><span>Program</span><span>Written safety plan · drug &amp; alcohol policy</span></div>
           </div>
         </section>
 
         <section>
-          <h3>Prequalified With</h3>
+          <h3>Bonding &amp; Financial</h3>
+          <div class="kv">
+            <div><span>Bonding</span><span>$300K single · $800K aggregate</span></div>
+            <div><span>Surety</span><span>Example Surety Co. (agent on request)</span></div>
+            <div><span>Financials</span><span>CPA-reviewed statement available</span></div>
+          </div>
+        </section>
+
+        <section>
+          <h3>Key Personnel</h3>
           <ul>
-            <li>BuildingConnected / TradeTapp profile</li>
-            <li>COMPASS (Bespoke Metrics) profile</li>
-            <li>W-9 &amp; COI on file, ready to send</li>
+            <li><b>Juan Rivera</b>, Owner / Estimator — 17 yrs concrete</li>
+            <li><b>Luis Rivera</b>, Superintendent — OSHA 30, 12 yrs</li>
           </ul>
         </section>
 
