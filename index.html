@@ -58,6 +58,7 @@ a{color:var(--ink)}
 .nav .links a:hover{color:var(--ink)}
 .nav .btn{font-size:15px;padding:10px 16px;min-height:44px}
 @media (max-width:760px){.nav .links a:not(.btn){display:none}}
+@media (max-width:420px){.nav .btn{padding:8px 12px;font-size:14px;min-height:40px}.brand{font-size:20px}.brand svg{width:32px;height:32px}}
 .hero{padding-block:64px 24px}
 .hero .top{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:40px;align-items:center}
 .hero h1{font-size:clamp(48px,8vw,104px);font-weight:800}
@@ -295,7 +296,7 @@ footer .copy{user-select:all}
       <span class="eyebrow">Precio claro</span>
       <h2 id="h-precio" style="margin-top:14px">Una cuota fija. Sin porcentaje de tus obras.</h2>
       <p>Cancelas cuando quieras. <b>Un solo trabajo nuevo paga el año completo.</b></p>
-      <div class="guar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg><div><b>Garantía:</b> si en 30 días no te llega ninguna invitación a cotizar, el segundo mes es gratis.</div></div>
+      <div class="guar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg><div><b>Garantía:</b> no pagas nada hasta que te llegue tu primera invitación a cotizar.</div></div>
       <div class="trades"><span>Concreto</span><span>Drywall</span><span>Pintura</span><span>Framing</span><span>Techos</span><span>Otros oficios</span></div>
     </div>
     <div class="card reveal">
@@ -308,7 +309,8 @@ footer .copy{user-select:all}
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>Invitaciones resumidas en español</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>Reporte semanal por WhatsApp</li>
       </ul>
-      <div class="promo"><b>Primeros 3 clientes:</b> $100 al mes, sin cuota de arranque, a cambio de un testimonio.</div>
+      <div class="promo"><b>Precio fundador, primeros 3 clientes:</b> $100 al mes por 3 meses, sin cuota de arranque. Empiezas a pagar cuando te llega tu primera invitación a cotizar.</div>
+      <div style="color:#4A5565;font-size:14px">Pago seguro con tarjeta o desde tu banco por Square. Sin contrato.</div>
       <a class="btn primary" href="https://wa.me/15809779155?text=Hola%20Carlos%2C%20quiero%20mi%20carta%20gratis" target="_blank" rel="noopener">Empezar con la carta gratis</a>
     </div>
   </div>
@@ -335,6 +337,7 @@ footer .copy{user-select:all}
 <footer>
   <div class="wrap">
     <span>© 2026 Puente Bids · 5802 Cedar Ridge Dr, Enid, OK 73703</span>
+    <a href="https://puentebids.cloud/pagar/" style="color:var(--ink-2)">¿Ya eres cliente? Paga aquí</a>
     <span class="copy">puentebids@gmail.com · Text / WhatsApp (580) 977-9155</span>
   </div>
 </footer>
