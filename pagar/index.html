@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Pagar tu servicio — Puente Bids</title>
+<meta name="description" content="Pago seguro del servicio mensual de Puente Bids para clientes.">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://puentebids.cloud/pagar/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><circle cx='60' cy='60' r='60' fill='%2313294B'/><line x1='60' y1='50' x2='60' y2='78' stroke='%23fff' stroke-width='4'/><path d='M21 77 Q60 18 99 77' fill='none' stroke='%23E07A1F' stroke-width='8' stroke-linecap='round'/><line x1='14' y1='78' x2='106' y2='78' stroke='%23fff' stroke-width='8' stroke-linecap='round'/></svg>">
+<meta name="theme-color" content="#0B1A33">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --sky:#0B1A33; --sky-2:#10254A; --ink:#F3F5F9; --ink-2:#B9C3D3; --ink-3:#7E8BA0;
+  --line:rgba(255,255,255,.12); --panel:rgba(255,255,255,.055); --panel-2:#FFFFFF; --panel-ink:#13294B; --panel-ink-2:#4A5565;
+  --accent:#E8832A; --accent-2:#F5A65B; --accent-ink:#0B1A33; --ok:#3DBB7A;
+  --display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif; --body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--sky);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--sky)}
+.grid{position:fixed;inset:-20% 0;z-index:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:56px 56px;will-change:transform}
+.glow{position:fixed;left:50%;top:-30vh;width:140vw;height:90vh;transform:translateX(-50%);z-index:0;pointer-events:none;background:radial-gradient(ellipse at center,rgba(232,131,42,.16),rgba(232,131,42,0) 60%)}
+.wrap{position:relative;z-index:1;max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance;letter-spacing:.005em;line-height:1}
+p{margin:0}
+a{color:var(--ink)}
+:focus-visible{outline:3px solid var(--accent-2);outline-offset:3px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-2);display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:26px;height:3px;background:var(--accent);display:inline-block}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:700;font-size:18px;padding:16px 24px;border-radius:8px;min-height:52px;transition:transform .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.primary:hover{background:var(--accent-2)}
+.btn svg{width:22px;height:22px;flex:none}
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:rgba(11,26,51,.78);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--display);font-weight:700;font-size:24px;letter-spacing:.04em}
+.brand b{color:var(--accent)}
+.brand svg{width:38px;height:38px}
+.nav .links{display:flex;align-items:center;gap:22px;font-weight:500;font-size:15px}
+.nav .links a{text-decoration:none;color:var(--ink-2)}
+.nav .links a:hover{color:var(--ink)}
+.nav .btn{font-size:15px;padding:10px 16px;min-height:44px}
+@media (max-width:760px){.nav .links a:not(.btn){display:none}}
+section.band{padding-block:84px}
+section.band.light{background:var(--panel-2);color:var(--panel-ink)}
+.light .eyebrow{color:#B4561A}.light .eyebrow::before{background:#B4561A}
+.sec-h{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:32px;align-items:end;margin-bottom:40px}
+.sec-h h2{font-size:clamp(38px,5vw,60px);font-weight:700}
+@media (max-width:760px){.sec-h{grid-template-columns:1fr}}
+.price{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,420px);gap:40px;align-items:start}
+.card{background:var(--panel-2);color:var(--panel-ink);border-radius:18px;padding:30px;display:flex;flex-direction:column;gap:16px;box-shadow:0 24px 60px rgba(0,0,0,.4);border-top:6px solid var(--accent)}
+.card .big{display:flex;align-items:baseline;gap:8px}
+.card .big b{font-family:var(--display);font-weight:800;font-size:76px;line-height:1}
+.card .big span{color:var(--panel-ink-2);font-size:18px}
+.card ul{margin:0;padding:14px 0 0;list-style:none;border-top:1px solid #E3E6EB;display:grid;gap:10px;font-size:15px}
+.card li{display:flex;gap:10px;align-items:flex-start}
+.card li svg{width:20px;height:20px;color:var(--ok);flex:none;margin-top:2px}
+@media (max-width:860px){.price{grid-template-columns:1fr}}
+.who{display:grid;grid-template-columns:300px minmax(0,1fr);gap:44px;align-items:center}
+.photo{display:block;width:100%;max-width:100%;height:auto;border-radius:16px;object-fit:cover;box-shadow:0 20px 50px rgba(19,41,75,.25)}
+.who h2{font-size:clamp(36px,4.5vw,54px)}
+.who p{font-size:19px;margin-top:14px;max-width:600px}
+@media (max-width:760px){.who{grid-template-columns:1fr}.photo{max-width:260px}}
+footer{padding-block:36px 60px;border-top:1px solid var(--line);color:var(--ink-3);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px}
+footer .copy{user-select:all}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.pay{padding-block:56px 40px}
+.pay h1{font-size:clamp(44px,7vw,84px);font-weight:800}
+.pay h1 em{font-style:normal;color:var(--accent)}
+.pay .lead{font-size:clamp(18px,2.2vw,22px);color:var(--ink-2);max-width:620px;margin-top:18px}
+.pay .lead b{color:var(--ink)}
+.trust{display:grid;gap:12px;margin-top:26px;max-width:560px}
+.trust div{display:flex;gap:12px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:16px;color:var(--ink-2)}
+.trust b{color:var(--ink)}
+.trust svg{width:24px;height:24px;color:var(--ok);flex:none;margin-top:1px}
+.card .small{color:#4A5565;font-size:15px}
+.card .btn.pending{background:#E3E6EB;color:#4A5565;cursor:default;pointer-events:none}
+.steps3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.s3{border:2px solid #E3E6EB;border-radius:14px;padding:22px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.s3 .n{font-family:var(--display);font-weight:800;font-size:44px;line-height:1;color:#B4561A}
+.s3 h3{font-size:22px;font-weight:700}
+.s3 p{color:var(--panel-ink-2);font-size:15px}
+@media (max-width:420px){.nav .btn{padding:8px 12px;font-size:14px;min-height:40px}.brand{font-size:20px}.brand svg{width:32px;height:32px}}
+</style>
+</head>
+<body>
+<div class="grid" aria-hidden="true"></div>
+<div class="glow" aria-hidden="true"></div>
+<nav class="nav" aria-label="Principal">
+  <div class="wrap">
+    <a class="brand" href="https://puentebids.cloud/" aria-label="Puente Bids, inicio">
+      <svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="60" fill="#13294B"/><circle cx="60" cy="60" r="58" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="2"/><line x1="40" y1="57" x2="40" y2="78" stroke="#fff" stroke-width="3"/><line x1="60" y1="50" x2="60" y2="78" stroke="#fff" stroke-width="3"/><line x1="80" y1="57" x2="80" y2="78" stroke="#fff" stroke-width="3"/><line x1="32" y1="78" x2="32" y2="94" stroke="#fff" stroke-width="5"/><line x1="88" y1="78" x2="88" y2="94" stroke="#fff" stroke-width="5"/><path d="M21 77 Q60 18 99 77" fill="none" stroke="#E8832A" stroke-width="7" stroke-linecap="round"/><line x1="14" y1="78" x2="106" y2="78" stroke="#fff" stroke-width="7" stroke-linecap="round"/></svg>
+      PUENTE <b>BIDS</b>
+    </a>
+    <div class="links">
+      <a href="https://puentebids.cloud/">Inicio</a>
+      <a class="btn primary" href="https://wa.me/15809779155?text=Hola%20Carlos%2C%20tengo%20una%20pregunta%20sobre%20mi%20pago" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-8.5 8.4 8.6 8.6 0 0 1-4-1L3 21l2.2-5.2a8.4 8.4 0 1 1 15.8-4.3z"/></svg>WhatsApp</a>
+    </div>
+  </div>
+</nav>
+
+<section class="wrap pay price">
+  <div class="copy">
+    <span class="eyebrow">Solo para clientes</span>
+    <h1 style="margin-top:18px">Paga tu servicio.<br><em>Seguro y en 1 minuto.</em></h1>
+    <p class="lead">Empiezas a pagar <b>cuando te llega tu primera invitación a cotizar</b>, no antes. Sin contrato: cancelas cuando quieras con un mensaje.</p>
+    <div class="trust">
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><span><b>Pago seguro con Square.</b> Pagas con tarjeta o directo desde tu banco. Nosotros nunca vemos tu tarjeta.</span></div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg><span><b>Nunca te pedimos datos por mensaje.</b> Ni tarjeta, ni banco, ni Seguro Social. Solo pagas en el link oficial de Square que te mandamos.</span></div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg><span><b>Recibo automático</b> a tu email cada vez que pagas.</span></div>
+    </div>
+  </div>
+  <div class="card">
+    <span class="eyebrow" style="color:#4A5565">Precio fundador</span>
+    <div class="big"><b>$100</b><span>al mes</span></div>
+    <div class="small">Los primeros 3 meses. Después, $300 al mes. Sin cuota de arranque.</div>
+    <ul>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>Te registramos con generales de tu zona y sumamos nuevos cada mes</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>Te presentamos al estimador y damos seguimiento cada semana</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>Cada invitación te la explicamos en español el mismo día</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>Ayuda con la precalificación y la cotización en inglés</li>
+    </ul>
+    <a class="btn primary pending" id="payBtn" href="#" aria-disabled="true">Pagar con Square (link en tu factura)</a>
+    <div class="small">¿Dudas antes de pagar? Escríbele a Carlos al <a href="https://wa.me/15809779155" style="color:#13294B;font-weight:700">(580) 977-9155</a>.</div>
+  </div>
+</section>
+
+<section class="band light" aria-labelledby="h-como">
+  <div class="wrap">
+    <div class="sec-h"><div><span class="eyebrow">Cómo funciona el pago</span><h2 id="h-como" style="margin-top:14px">Tres pasos. Nada escondido.</h2></div></div>
+    <div class="steps3">
+      <div class="s3"><div class="n">1</div><h3>Te llega tu primera invitación</h3><p>Te avisamos por WhatsApp con la obra, lo que piden y la fecha límite.</p></div>
+      <div class="s3"><div class="n">2</div><h3>Te mandamos la factura</h3><p>Llega por email o WhatsApp a nombre de Puente Bids, con el botón "Pagar".</p></div>
+      <div class="s3"><div class="n">3</div><h3>Pagas en Square</h3><p>Tarjeta o banco. Cada mes llega la factura sola; cancelas cuando quieras.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="h-quien">
+  <div class="wrap who">
+    <img class="photo" src="https://d2ol7oe51mr4n9.cloudfront.net/user_3IkWgim8q9eNQavxziL9vmwsNp2/1d1b237a-1995-46d7-bf81-74a063746fb3.jpg" width="900" height="1200" alt="Carlos Andújar en una obra comercial, con casco y chaleco de seguridad" loading="lazy">
+    <div>
+      <span class="eyebrow">A quién le pagas</span>
+      <h2 id="h-quien" style="margin-top:14px">A una persona real, no a un programa.</h2>
+      <p style="color:var(--ink-2)">Soy Carlos Andújar, superintendente de construcción comercial. Puente Bids es mi compañía. Si algo de tu factura no se ve bien, me escribes y lo arreglamos.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Puente Bids · 5802 Cedar Ridge Dr, Enid, OK 73703</span>
+    <span class="copy">puentebids@gmail.com · Text / WhatsApp (580) 977-9155</span>
+  </div>
+</footer>
+</body>
+</html>
