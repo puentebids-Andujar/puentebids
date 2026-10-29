@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Puente Bids — Get on more GC bid lists</title>
+<meta name="description" content="We help subcontractors get invited to bid by more general contractors. We build your company profile, register you with GCs and follow up with their estimators. You just bid.">
+<link rel="canonical" href="https://puentebids.cloud/en/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><circle cx='60' cy='60' r='60' fill='%2313294B'/><line x1='60' y1='50' x2='60' y2='78' stroke='%23fff' stroke-width='4'/><path d='M21 77 Q60 18 99 77' fill='none' stroke='%23E07A1F' stroke-width='8' stroke-linecap='round'/><line x1='14' y1='78' x2='106' y2='78' stroke='%23fff' stroke-width='7' stroke-linecap='round'/></svg>">
+<link rel="apple-touch-icon" href="https://d2ol7oe51mr4n9.cloudfront.net/user_3IkWgim8q9eNQavxziL9vmwsNp2/65668f9b-f1ee-4323-b944-34b7bf84ad93.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Puente Bids — We build the bridge. You bid.">
+<meta property="og:description" content="More general contractors and more bid invitations for subcontractors. We do the GC paperwork for you.">
+<meta property="og:image" content="https://d2ol7oe51mr4n9.cloudfront.net/user_3IkWgim8q9eNQavxziL9vmwsNp2/65668f9b-f1ee-4323-b944-34b7bf84ad93.png">
+<meta property="og:url" content="https://puentebids.cloud/en/">
+<meta name="theme-color" content="#0B1A33">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}.float{background:var(--accent)!important;color:var(--accent-ink)!important}
+</style>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --sky:#0B1A33; --sky-2:#10254A; --ink:#F3F5F9; --ink-2:#B9C3D3; --ink-3:#7E8BA0;
+  --line:rgba(255,255,255,.12); --panel:rgba(255,255,255,.055); --panel-2:#FFFFFF; --panel-ink:#13294B; --panel-ink-2:#4A5565;
+  --accent:#E8832A; --accent-2:#F5A65B; --accent-ink:#0B1A33; --ok:#3DBB7A;
+  --display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif; --body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--sky);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--sky)}
+.grid{position:fixed;inset:-20% 0;z-index:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:56px 56px;will-change:transform}
+.glow{position:fixed;left:50%;top:-30vh;width:140vw;height:90vh;transform:translateX(-50%);z-index:0;pointer-events:none;background:radial-gradient(ellipse at center,rgba(232,131,42,.16),rgba(232,131,42,0) 60%)}
+.wrap{position:relative;z-index:1;max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance;letter-spacing:.005em;line-height:1}
+p{margin:0}
+a{color:var(--ink)}
+:focus-visible{outline:3px solid var(--accent-2);outline-offset:3px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-2);display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:26px;height:3px;background:var(--accent);display:inline-block}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:700;font-size:18px;padding:16px 24px;border-radius:8px;min-height:52px;transition:transform .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.primary:hover{background:var(--accent-2)}
+.btn.ghost{border:2px solid rgba(255,255,255,.3);color:var(--ink)}
+.btn.ghost:hover{border-color:rgba(255,255,255,.6)}
+.btn svg{width:22px;height:22px;flex:none}
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:rgba(11,26,51,.78);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--display);font-weight:700;font-size:24px;letter-spacing:.04em}
+.brand b{color:var(--accent)}
+.brand svg{width:38px;height:38px}
+.nav .links{display:flex;align-items:center;gap:22px;font-weight:500;font-size:15px}
+.nav .links a{text-decoration:none;color:var(--ink-2)}
+.nav .links a:hover{color:var(--ink)}
+.nav .btn{font-size:15px;padding:10px 16px;min-height:44px}
+@media (max-width:760px){.nav .links a:not(.btn){display:none}}
+@media (max-width:420px){.nav .btn{padding:8px 12px;font-size:14px;min-height:40px}.brand{font-size:20px}.brand svg{width:32px;height:32px}}
+.hero{padding-block:64px 24px}
+.hero .top{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:40px;align-items:center}
+.hero h1{font-size:clamp(48px,8vw,104px);font-weight:800}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero .lead{font-size:clamp(18px,2.2vw,23px);color:var(--ink-2);max-width:620px;margin-top:20px}
+.hero .lead b{color:var(--ink)}
+.hero .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.mark{position:relative;width:300px;height:300px;display:grid;place-items:center;justify-self:end}
+.mark .rings{position:absolute;inset:0}
+.mark .rings i{position:absolute;inset:0;border:1px solid rgba(255,255,255,.14);border-radius:50%;animation:ring 6s linear infinite}
+.mark .rings i:nth-child(2){animation-delay:-2s}.mark .rings i:nth-child(3){animation-delay:-4s}
+@keyframes ring{from{transform:scale(.55);opacity:0}30%{opacity:.9}to{transform:scale(1.15);opacity:0}}
+.mark svg{width:200px;height:200px;filter:drop-shadow(0 18px 40px rgba(232,131,42,.35));will-change:transform,opacity}
+.proof{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:36px;padding-top:22px;border-top:1px solid var(--line);color:var(--ink-2);font-size:15px}
+.proof span{display:inline-flex;align-items:center;gap:8px}
+.proof svg{width:18px;height:18px;color:var(--ok)}
+@media (max-width:860px){.hero .top{grid-template-columns:1fr}.mark{width:200px;height:200px;justify-self:center;order:-1}.mark svg{width:140px;height:140px}}
+.scene{position:relative;z-index:1;margin-top:28px}
+.scene-sticky{position:sticky;top:calc(env(safe-area-inset-top,0px) + 64px);height:min(62vh,520px)}
+.scene svg{width:100%;height:100%;display:block}
+.scene .bank-label{font-family:var(--display);font-weight:700;font-size:22px;fill:var(--ink);letter-spacing:.04em}
+.scene .bank-sub{font-family:var(--body);font-size:14px;fill:var(--ink-2)}
+.scene .arch{stroke:var(--accent);stroke-width:14;fill:none;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1}
+.scene .deck{stroke:#FFFFFF;stroke-width:12;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1}
+.scene .hanger{stroke:#FFFFFF;stroke-width:5;opacity:0;transform-origin:center bottom;transform:scaleY(0)}
+.scene .pier{fill:#FFFFFF;opacity:.0;transform-origin:center top;transform:scaleY(0)}
+.scene .truck{opacity:0}
+.scene .spark{fill:var(--accent-2);opacity:0}
+.steps{position:relative;z-index:1;display:grid;gap:min(26vh,220px);padding-block:16px 40px;max-width:520px}
+.step{background:var(--panel-2);color:var(--panel-ink);border-radius:14px;padding:22px 24px;display:grid;grid-template-columns:56px 1fr;gap:16px;align-items:start;box-shadow:0 18px 50px rgba(0,0,0,.35);opacity:.55;transform:translateY(12px) scale(.98);transition:opacity .4s ease,transform .4s ease}
+.step.on{opacity:1;transform:none}
+.step .n{width:56px;height:56px;border-radius:14px;background:var(--panel-ink);color:#fff;display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:28px}
+.step.on .n{background:var(--accent);color:var(--accent-ink)}
+.step h3{font-size:26px;font-weight:700;margin-bottom:6px}
+.step p{color:var(--panel-ink-2);font-size:16px;line-height:1.5}
+.step p b{color:var(--panel-ink)}
+@media (max-width:860px){.scene-sticky{height:42vh;top:calc(env(safe-area-inset-top,0px) + 60px)}.steps{gap:18vh;max-width:none}}
+section.band{padding-block:84px}
+section.band.light{background:var(--panel-2);color:var(--panel-ink)}
+.light .eyebrow{color:#B4561A}.light .eyebrow::before{background:#B4561A}
+.sec-h{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:32px;align-items:end;margin-bottom:40px}
+.sec-h h2{font-size:clamp(38px,5vw,60px);font-weight:700}
+.sec-h p{font-size:19px;color:var(--ink-2);max-width:520px}
+.light .sec-h p{color:var(--panel-ink-2)}
+@media (max-width:760px){.sec-h{grid-template-columns:1fr}}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.tile{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.tile .ic{width:60px;height:60px;border-radius:14px;background:rgba(232,131,42,.16);display:grid;place-items:center}
+.tile .ic svg{width:30px;height:30px;color:var(--accent-2)}
+.tile h3{font-size:25px;font-weight:700}
+.tile p{color:var(--ink-2);font-size:16px}
+.reveal{opacity:.4;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+.qa{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.q{border:2px solid #E3E6EB;border-radius:14px;padding:22px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.q .ans{font-family:var(--display);font-weight:800;font-size:44px;line-height:1;color:var(--ok)}
+.q .ans.no{color:#B4561A}
+.q h3{font-size:22px;font-weight:700}
+.q p{color:var(--panel-ink-2);font-size:15px}
+.price{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,420px);gap:40px;align-items:start}
+.price h2{font-size:clamp(38px,5vw,60px)}
+.price .copy p{font-size:19px;color:var(--ink-2);max-width:520px;margin-top:16px}
+.price .copy b{color:var(--ink)}
+.trades{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.trades span{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:14px;font-weight:600}
+.card{background:var(--panel-2);color:var(--panel-ink);border-radius:18px;padding:30px;display:flex;flex-direction:column;gap:16px;box-shadow:0 24px 60px rgba(0,0,0,.4);border-top:6px solid var(--accent)}
+.card .big{display:flex;align-items:baseline;gap:8px}
+.card .big b{font-family:var(--display);font-weight:800;font-size:76px;line-height:1}
+.card .big span{color:var(--panel-ink-2);font-size:18px}
+.card ul{margin:0;padding:14px 0 0;list-style:none;border-top:1px solid #E3E6EB;display:grid;gap:10px;font-size:15px}
+.card li{display:flex;gap:10px;align-items:flex-start}
+.card li svg{width:20px;height:20px;color:var(--ok);flex:none;margin-top:2px}
+.promo{background:#FDF0E3;border-radius:10px;padding:12px 14px;font-size:14px;line-height:1.45}
+.promo b{color:#B4561A}
+.guar{display:flex;gap:12px;align-items:flex-start;background:rgba(61,187,122,.12);border:1px solid rgba(61,187,122,.4);border-radius:12px;padding:14px 16px;margin-top:22px;max-width:520px}
+.guar svg{width:26px;height:26px;color:var(--ok);flex:none}
+@media (max-width:860px){.price{grid-template-columns:1fr}}
+.who{display:grid;grid-template-columns:300px minmax(0,1fr);gap:44px;align-items:center}
+.photo{display:block;width:100%;max-width:100%;height:auto;border-radius:16px;object-fit:cover;box-shadow:0 20px 50px rgba(19,41,75,.25)}
+.who h2{font-size:clamp(36px,4.5vw,54px)}
+.who p{font-size:19px;color:var(--panel-ink-2);margin-top:14px;max-width:600px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.chips span{background:#F4F5F7;border-radius:999px;padding:7px 13px;font-size:14px;font-weight:600}
+@media (max-width:760px){.who{grid-template-columns:1fr}.photo{max-width:260px}}
+.gc{background:var(--accent);color:var(--accent-ink);border-radius:18px;padding:34px 36px;display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.gc .eyebrow{color:var(--accent-ink)}.gc .eyebrow::before{background:var(--accent-ink)}
+.gc h2{font-size:clamp(28px,3.4vw,38px);margin-top:8px;max-width:720px}
+.gc .btn{background:var(--accent-ink);color:#fff}
+footer{padding-block:36px 110px;border-top:1px solid var(--line);color:var(--ink-3);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px}
+footer .copy{user-select:all}
+.float{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:9;background:#25D366;color:#062b16;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:10px;padding:14px 18px;border-radius:999px;box-shadow:0 14px 40px rgba(0,0,0,.45);font-size:16px}
+.float svg{width:24px;height:24px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.step{opacity:1;transform:none}}
+</style>
+<div class="grid" id="grid" aria-hidden="true"></div>
+<div class="glow" aria-hidden="true"></div>
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Puente Bids, home">
+      <svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="60" fill="#13294B"/><circle cx="60" cy="60" r="58" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="2"/><line x1="40" y1="57" x2="40" y2="78" stroke="#fff" stroke-width="3"/><line x1="60" y1="50" x2="60" y2="78" stroke="#fff" stroke-width="3"/><line x1="80" y1="57" x2="80" y2="78" stroke="#fff" stroke-width="3"/><line x1="32" y1="78" x2="32" y2="94" stroke="#fff" stroke-width="5"/><line x1="88" y1="78" x2="88" y2="94" stroke="#fff" stroke-width="5"/><path d="M21 77 Q60 18 99 77" fill="none" stroke="#E8832A" stroke-width="7" stroke-linecap="round"/><line x1="14" y1="78" x2="106" y2="78" stroke="#fff" stroke-width="7" stroke-linecap="round"/></svg>
+      PUENTE <b>BIDS</b>
+    </a>
+    <div class="links">
+      <a href="#como">How it works</a>
+      <a href="#precio">Price</a>
+      <a href="#quien">About</a>
+      <a href="#gc">For contractors</a>
+      <a href="/">Español</a>
+      <a class="btn primary" href="mailto:puentebids@gmail.com?subject=Free%20company%20profile" >
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-8.5 8.4 8.6 8.6 0 0 1-4-1L3 21l2.2-5.2a8.4 8.4 0 1 1 15.8-4.3z"/></svg>Email
+      </a>
+    </div>
+  </div>
+</nav>
+<header class="hero wrap" id="top">
+  <div class="top">
+    <div>
+      <span class="eyebrow">For subcontractors · Texas</span>
+      <h1 style="margin-top:18px">We build the bridge.<br><em>You bid.</em></h1>
+      <p class="lead">We introduce you to <b>general contractors</b> in your area so they <b>invite you to bid</b>. We handle the registration paperwork and the follow-up. You stay on the job.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:puentebids@gmail.com?subject=Free%20company%20profile" >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-8.5 8.4 8.6 8.6 0 0 1-4-1L3 21l2.2-5.2a8.4 8.4 0 1 1 15.8-4.3z"/></svg>Get my free company profile
+        </a>
+        <a class="btn ghost" href="#como">How it works ↓</a>
+      </div>
+    </div>
+    <div class="mark" aria-hidden="true">
+      <div class="rings"><i></i><i></i><i></i></div>
+      <svg id="heroMark" viewBox="0 0 120 120"><circle cx="60" cy="60" r="60" fill="#13294B"/><circle cx="60" cy="60" r="58" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.5"/><line x1="40" y1="57" x2="40" y2="78" stroke="#fff" stroke-width="3"/><line x1="60" y1="50" x2="60" y2="78" stroke="#fff" stroke-width="3"/><line x1="80" y1="57" x2="80" y2="78" stroke="#fff" stroke-width="3"/><line x1="32" y1="78" x2="32" y2="94" stroke="#fff" stroke-width="5"/><line x1="88" y1="78" x2="88" y2="94" stroke="#fff" stroke-width="5"/><path d="M21 77 Q60 18 99 77" fill="none" stroke="#E8832A" stroke-width="7" stroke-linecap="round"/><line x1="14" y1="78" x2="106" y2="78" stroke="#fff" stroke-width="7" stroke-linecap="round"/></svg>
+    </div>
+  </div>
+  <div class="proof">
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>Run by a commercial construction superintendent</span>
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>English &amp; Spanish</span>
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>No long contract</span>
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>No sales calls</span>
+  </div>
+</header>
+<section class="scene wrap" id="como" aria-label="How it works">
+  <div class="scene-sticky">
+    <svg id="bridge" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMax meet" role="img" aria-label="A bridge built from your company to general contractors">
+      <defs>
+        <linearGradient id="water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#10254A"/><stop offset="1" stop-color="#0B1A33"/></linearGradient>
+      </defs>
+      <rect x="0" y="420" width="1200" height="100" fill="url(#water)"/>
+      <path d="M0 440 Q60 430 120 440 T240 440 T360 440 T480 440 T600 440 T720 440 T840 440 T960 440 T1080 440 T1200 440" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="2"/>
+      <path d="M0 420 L0 330 L240 330 L300 420 Z" fill="#17305A"/>
+      <rect x="40" y="246" width="150" height="84" rx="6" fill="#1E3B6B"/>
+      <rect x="54" y="262" width="26" height="26" rx="3" fill="#E8832A"/>
+      <rect x="92" y="262" width="26" height="26" rx="3" fill="rgba(255,255,255,.35)"/>
+      <rect x="130" y="262" width="26" height="26" rx="3" fill="rgba(255,255,255,.35)"/>
+      <rect x="54" y="300" width="64" height="30" rx="3" fill="#0B1A33"/>
+      <text x="40" y="226" class="bank-label">YOUR COMPANY</text>
+      <text x="40" y="206" class="bank-sub">Concrete · Drywall · Painting · Framing · Roofing</text>
+      <path d="M1200 420 L1200 330 L960 330 L900 420 Z" fill="#17305A"/>
+      <rect x="980" y="150" width="70" height="180" rx="4" fill="#1E3B6B"/>
+      <rect x="1060" y="200" width="56" height="130" rx="4" fill="#1A3560"/>
+      <rect x="1126" y="110" width="54" height="220" rx="4" fill="#1E3B6B"/>
+      <g fill="rgba(255,255,255,.35)">
+        <rect x="992" y="166" width="12" height="12"/><rect x="1014" y="166" width="12" height="12"/><rect x="992" y="194" width="12" height="12"/><rect x="1014" y="194" width="12" height="12"/><rect x="992" y="222" width="12" height="12"/><rect x="1014" y="222" width="12" height="12"/>
+        <rect x="1138" y="126" width="12" height="12"/><rect x="1158" y="126" width="12" height="12"/><rect x="1138" y="154" width="12" height="12"/><rect x="1158" y="154" width="12" height="12"/><rect x="1138" y="182" width="12" height="12"/><rect x="1158" y="182" width="12" height="12"/>
+        <rect x="1072" y="216" width="12" height="12"/><rect x="1094" y="216" width="12" height="12"/><rect x="1072" y="244" width="12" height="12"/><rect x="1094" y="244" width="12" height="12"/>
+      </g>
+      <rect x="1140" y="128" width="8" height="12" fill="#E8832A"/>
+      <text x="1160" y="90" text-anchor="end" class="bank-label">GENERAL CONTRACTORS</text>
+      <text x="1160" y="70" text-anchor="end" class="bank-sub">The ones who send the bid invitations</text>
+      <g id="piers">
+        <rect class="pier" x="372" y="370" width="22" height="60"/>
+        <rect class="pier" x="806" y="370" width="22" height="60"/>
+      </g>
+      <g id="hangers">
+        <line class="hanger" x1="420" y1="270" x2="420" y2="370"/>
+        <line class="hanger" x1="510" y1="212" x2="510" y2="370"/>
+        <line class="hanger" x1="600" y1="192" x2="600" y2="370"/>
+        <line class="hanger" x1="690" y1="212" x2="690" y2="370"/>
+        <line class="hanger" x1="780" y1="270" x2="780" y2="370"/>
+      </g>
+      <path id="arch" class="arch" pathLength="1" d="M300 368 Q600 60 900 368"/>
+      <line id="deck" class="deck" pathLength="1" x1="270" y1="370" x2="930" y2="370"/>
+      <g id="truck" class="truck">
+        <rect x="-34" y="-30" width="48" height="22" rx="4" fill="#E8832A"/>
+        <rect x="14" y="-24" width="20" height="16" rx="3" fill="#F5A65B"/>
+        <circle cx="-20" cy="-4" r="6" fill="#fff"/><circle cx="22" cy="-4" r="6" fill="#fff"/>
+      </g>
+      <g id="sparks"><circle class="spark" cx="920" cy="300" r="5"/><circle class="spark" cx="950" cy="280" r="4"/><circle class="spark" cx="905" cy="275" r="3"/></g>
+    </svg>
+  </div>
+  <div class="steps" id="steps">
+    <div class="step" data-at="0.08">
+      <div class="n">1</div>
+      <div><h3>Your company profile</h3><p>A <b>one-page</b> capability statement with your projects, insurance and contact info. Real data only. You approve it.</p></div>
+    </div>
+    <div class="step" data-at="0.45">
+      <div class="n">2</div>
+      <div><h3>We register you with 20 GCs</h3><p>We find GCs building your kind of work in your area, fill out their <b>prequalification</b> and introduce you to the estimator.</p></div>
+    </div>
+    <div class="step" data-at="0.82">
+      <div class="n">3</div>
+      <div><h3>You get invited to bid</h3><p>Every invitation comes to you <b>summarized</b>: the job, the scope and the due date. Weekly report by email or text.</p></div>
+    </div>
+  </div>
+</section>
+<section class="band" aria-labelledby="h-que">
+  <div class="wrap">
+    <div class="sec-h">
+      <div><span class="eyebrow">What you get</span><h2 id="h-que" style="margin-top:14px">Good work alone does not get you invited.</h2></div>
+      <p>Most GCs only invite the subs already on their bid list. Getting on it takes registrations, prequal forms and follow-up. We do that for you.</p>
+    </div>
+    <div class="tiles">
+      <div class="tile reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h10l6 6v10H4z"/><path d="M14 4v6h6"/><path d="M8 14h8M8 18h5"/></svg></div><h3>Company profile</h3><p>Capability statement and project list with photos. Ready to send.</p></div>
+      <div class="tile reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-5h6v5"/><path d="M9 11h2M13 11h2"/></svg></div><h3>20 new GCs</h3><p>We find them in your area and fill out their registration for you.</p></div>
+      <div class="tile reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 8l9 6 9-6"/></svg></div><h3>Invitations, summarized</h3><p>What job, where, what scope and when bids are due. No digging through emails.</p></div>
+      <div class="tile reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-8.5 8.4 8.6 8.6 0 0 1-4-1L3 21l2.2-5.2a8.4 8.4 0 1 1 15.8-4.3z"/></svg></div><h3>Done for you</h3><p>Send us a quick email or text and we take it from there. Weekly report.</p></div>
+    </div>
+  </div>
+</section>
+<section class="band light" aria-labelledby="h-qa">
+  <div class="wrap">
+    <div class="sec-h">
+      <div><span class="eyebrow">Common questions</span><h2 id="h-qa" style="margin-top:14px">Short answers.</h2></div>
+      <p>What every sub asks before starting.</p>
+    </div>
+    <div class="qa">
+      <div class="q reveal"><div class="ans no">No</div><h3>Do I need an estimator or office staff?</h3><p>No. We handle the registrations, forms and follow-up for you.</p></div>
+      <div class="q reveal"><div class="ans no">No</div><h3>Do I need new software?</h3><p>No. If a GC asks for a BuildingConnected or Procore account, we tell you exactly what to enter.</p></div>
+      <div class="q reveal"><div class="ans no">No</div><h3>Do you charge per job?</h3><p>One flat monthly fee. What you make on the job is yours.</p></div>
+      <div class="q reveal"><div class="ans">Yes</div><h3>Can I cancel anytime?</h3><p>No long contract. If it does not work for you, you stop.</p></div>
+    </div>
+  </div>
+</section>
+<section class="band" id="precio" aria-labelledby="h-precio">
+  <div class="wrap price">
+    <div class="copy">
+      <span class="eyebrow">Simple pricing</span>
+      <h2 id="h-precio" style="margin-top:14px">One flat fee. No percentage of your jobs.</h2>
+      <p>Cancel anytime. <b>One new job pays for the whole year.</b></p>
+      <div class="guar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg><div><b>Guarantee:</b> you pay nothing until you get your first bid invitation.</div></div>
+      <div class="trades"><span>Concrete</span><span>Drywall</span><span>Painting</span><span>Framing</span><span>Roofing</span><span>Other trades</span></div>
+    </div>
+    <div class="card reveal">
+      <span class="eyebrow" style="color:#4A5565">One plan</span>
+      <div class="big"><b>$300</b><span>per month</span></div>
+      <div style="color:#4A5565;font-size:15px">+ $200 one-time setup (your company profile and prequalification)</div>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>20 GCs in your area to start; we keep adding more</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>Prequalification forms filled out by us</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>Bid invitations summarized for you</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>Weekly report</li>
+      </ul>
+      <div class="promo"><b>Founding price, first 3 clients:</b> $100 per month for 3 months, no setup fee. You start paying when your first bid invitation arrives.</div>
+      <div style="color:#4A5565;font-size:14px">Secure payment by card or bank through Square. No contract.</div>
+      <a class="btn primary" href="mailto:puentebids@gmail.com?subject=Free%20company%20profile" >Start with a free company profile</a>
+    </div>
+  </div>
+</section>
+<section class="band light" id="quien" aria-labelledby="h-quien">
+  <div class="wrap who">
+    <img class="photo" src="https://d2ol7oe51mr4n9.cloudfront.net/user_3IkWgim8q9eNQavxziL9vmwsNp2/1d1b237a-1995-46d7-bf81-74a063746fb3.jpg" width="900" height="1200" alt="Carlos Andújar on a commercial jobsite, wearing a hard hat and safety vest" loading="lazy">
+    <div>
+      <span class="eyebrow">Who is behind this</span>
+      <h2 id="h-quien" style="margin-top:14px">Not software. Someone from the jobsite.</h2>
+      <p>I'm Carlos Andújar, a commercial construction superintendent. I see from the inside how GCs choose who to invite and what they ask for in their paperwork. Puente Bids makes sure subs who do good work get on those lists too.</p>
+      <div class="chips"><span>Active superintendent</span><span>OSHA 10</span><span>Bilingual</span><span>Enid, Oklahoma</span></div>
+    </div>
+  </div>
+</section>
+<section class="band" id="gc" aria-labelledby="h-gc">
+  <div class="wrap">
+    <div class="gc reveal">
+      <div><span class="eyebrow">For general contractors</span><h2 id="h-gc">Looking for bilingual trade partners in Texas? We send complete, ready-to-review subcontractor packages, in English.</h2></div>
+      <a class="btn" href="mailto:puentebids@gmail.com">Email Carlos</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Puente Bids · 5802 Cedar Ridge Dr, Enid, OK 73703</span>
+    <a href="https://puentebids.cloud/pagar/" style="color:var(--ink-2)">Already a client? Pay here</a>
+    <span class="copy">puentebids@gmail.com · Text / WhatsApp (580) 977-9155</span>
+  </div>
+</footer>
+<a class="float" href="mailto:puentebids@gmail.com?subject=Free%20company%20profile"  aria-label="Email us">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-8.5 8.4 8.6 8.6 0 0 1-4-1L3 21l2.2-5.2a8.4 8.4 0 1 1 15.8-4.3z"/></svg>Email us
+</a>
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const $ = s => document.querySelector(s);
+  const scene = $('#como'), arch = $('#arch'), deck = $('#deck'), truck = $('#truck'), grid = $('#grid'), mark = $('#heroMark');
+  const hangers = [...document.querySelectorAll('.hanger')], piers = [...document.querySelectorAll('.pier')], sparks = [...document.querySelectorAll('.spark')];
+  const steps = [...document.querySelectorAll('.step')];
+  const clamp = (v,a,b) => Math.max(a, Math.min(b, v));
+  const ease = t => t<.5 ? 2*t*t : -1+(4-2*t)*t;
+  function draw(p){
+    const a = clamp(p/0.45, 0, 1);
+    arch.style.strokeDashoffset = 1 - ease(a);
+    piers.forEach((el,i)=>{ const v = clamp((p-0.05-i*0.05)/0.12,0,1); el.style.opacity = v; el.style.transform = 'scaleY(' + v + ')'; });
+    hangers.forEach((el,i)=>{ const v = clamp((p-0.30-i*0.05)/0.12,0,1); el.style.opacity = v; el.style.transform = 'scaleY(' + v + ')'; });
+    const d = clamp((p-0.42)/0.25, 0, 1);
+    deck.style.strokeDashoffset = 1 - ease(d);
+    const t = clamp((p-0.68)/0.28, 0, 1);
+    if (t > 0) {
+      const x = 270 + (930-270)*t;
+      truck.style.opacity = 1;
+      truck.setAttribute('transform', 'translate(' + x + ' 370)');
+    } else truck.style.opacity = 0;
+    sparks.forEach((el,i)=>{ el.style.opacity = t > 0.92 ? (1 - (i*0.25)) : 0; });
+    steps.forEach(s => s.classList.toggle('on', p >= +s.dataset.at));
+  }
+  function onScroll(){
+    const r = scene.getBoundingClientRect();
+    const vh = innerHeight;
+    const total = r.height - vh*0.55;
+    const p = clamp((vh*0.75 - r.top) / Math.max(total,1), 0, 1);
+    draw(reduce ? 1 : p);
+    if (!reduce) {
+      grid.style.transform = 'translateY(' + (scrollY * -0.08) + 'px)';
+      const hp = clamp(scrollY / 420, 0, 1);
+      mark.style.transform = 'scale(' + (1 + hp*0.9) + ')';
+      mark.style.opacity = 1 - hp*0.9;
+    }
+  }
+  let tick = false;
+  addEventListener('scroll', () => { if(!tick){ tick = true; requestAnimationFrame(()=>{ onScroll(); tick=false; }); } }, {passive:true});
+  addEventListener('resize', onScroll);
+  onScroll();
+  if (reduce) steps.forEach(s=>s.classList.add('on'));
+  const io = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }), {threshold:.15});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+})();
+</script>
+</body>
+</html>
