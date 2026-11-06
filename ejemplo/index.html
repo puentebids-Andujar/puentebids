@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ejemplo de cotización — Puente Bids</title>
+<meta name="description" content="Vea un ejemplo real del trabajo: resumen de cantidades sacado de los planos y la propuesta en inglés lista para el estimador.">
+<link rel="canonical" href="https://puentebids.cloud/ejemplo/">
+<link rel="alternate" hreflang="es" href="https://puentebids.cloud/">
+<link rel="alternate" hreflang="en" href="https://puentebids.cloud/en/">
+<meta property="og:title" content="Puente Bids — Más invitaciones a cotizar para subcontratistas">
+<meta property="og:description" content="Registramos a su compañía con contratistas generales, hacemos los papeles en inglés y le damos seguimiento al estimador. $100 para empezar y $300 al mes, sin contrato.">
+<meta property="og:image" content="https://d2ol7oe51mr4n9.cloudfront.net/user_3IkWgim8q9eNQavxziL9vmwsNp2/65668f9b-f1ee-4323-b944-34b7bf84ad93.png">
+<meta property="og:url" content="https://puentebids.cloud/">
+<link rel="icon" href="https://d2ol7oe51mr4n9.cloudfront.net/user_3IkWgim8q9eNQavxziL9vmwsNp2/65668f9b-f1ee-4323-b944-34b7bf84ad93.png">
+<meta name="theme-color" content="#13294B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F7F8F6;--sheet:#FFFFFF;--ink:#16202E;--ink2:#4D5868;--navy:#13294B;--safety:#E8832A;--rule:#CBD1D9;--grid:#E6EAEE}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:18px;line-height:1.55}
+a{color:var(--navy)}
+:focus-visible{outline:3px solid var(--safety);outline-offset:3px}
+.w{max-width:1100px;margin:0 auto;padding:0 20px}
+header.top{background:var(--sheet);border-bottom:1px solid var(--rule)}
+header.top .w{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy);font-weight:800;font-stretch:112%;font-size:21px;letter-spacing:.01em}
+.brand svg{width:36px;height:36px}
+nav.links{display:flex;gap:22px;align-items:center;font-size:16px}
+nav.links a{text-decoration:none;color:var(--ink2)}
+nav.links a:hover{color:var(--ink)}
+nav.links a.lang{color:var(--navy);font-weight:600}
+@media(max-width:720px){nav.links a:not(.lang){display:none}}
+.hero{padding:56px 0 48px;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:32px 32px;border-bottom:1px solid var(--rule)}
+.hero .w{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:48px;align-items:center}
+h1{font-stretch:85%;font-weight:800;font-size:clamp(40px,6.2vw,72px);line-height:1.02;letter-spacing:-.01em;margin:0;color:var(--navy);max-width:14ch}
+.lead{font-size:20px;color:var(--ink2);margin:20px 0 0;max-width:34em}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:12px 22px;border-radius:6px;font-weight:700;font-size:17px;text-decoration:none}
+.btn.main{background:var(--safety);color:#1a1006}
+.btn.main:hover{background:#d9741c}
+.btn.line{border:2px solid var(--navy);color:var(--navy);background:var(--sheet)}
+.tblock{background:var(--sheet);border:2px solid var(--navy);font-size:15px}
+.tblock .hd{background:var(--navy);color:#fff;padding:8px 14px;font-weight:700;font-stretch:112%;display:flex;justify-content:space-between}
+.tblock .hd span{font-weight:500;opacity:.8}
+.tblock dl{margin:0;display:grid;grid-template-columns:auto 1fr}
+.tblock dt,.tblock dd{margin:0;padding:10px 14px;border-top:1px solid var(--rule)}
+.tblock dt{color:var(--ink2);border-right:1px solid var(--rule);white-space:nowrap}
+.tblock dd{font-weight:600}
+.tblock dd.money{font-size:22px;font-stretch:90%;font-weight:800;color:var(--navy)}
+@media(max-width:860px){.hero .w{grid-template-columns:1fr}.hero{padding-top:36px}}
+section{padding:64px 0;border-bottom:1px solid var(--rule)}
+h2{font-stretch:88%;font-weight:800;font-size:clamp(30px,4vw,44px);line-height:1.08;margin:0 0 14px;color:var(--navy)}
+.intro{color:var(--ink2);max-width:36em;margin:0 0 32px}
+.what{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 48px}
+.what div{padding:16px 0;border-top:1px solid var(--rule)}
+.what h3{margin:0 0 4px;font-size:19px}
+.what p{margin:0;color:var(--ink2);font-size:17px}
+@media(max-width:720px){.what{grid-template-columns:1fr}}
+ol.how{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;counter-reset:s}
+ol.how li{counter-increment:s;padding-top:14px;border-top:4px solid var(--safety)}
+ol.how li::before{content:counter(s);font-weight:800;font-stretch:85%;font-size:40px;line-height:1;color:var(--navy);display:block;margin-bottom:6px}
+ol.how h3{margin:0 0 4px;font-size:19px}
+ol.how p{margin:0;color:var(--ink2);font-size:17px}
+@media(max-width:720px){ol.how{grid-template-columns:1fr}}
+.price{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:start}
+.pbox{background:var(--sheet);border:2px solid var(--navy);padding:26px}
+.pbox .big{font-weight:800;font-stretch:85%;font-size:64px;line-height:1;color:var(--navy)}
+.pbox .big small{font-size:20px;font-stretch:100%;font-weight:600;color:var(--ink2);margin-left:6px}
+.pbox .start{font-weight:700;margin:8px 0 16px}
+.pbox ul{margin:0;padding:0 0 0 20px;color:var(--ink2)}
+.pbox li{margin:4px 0}
+.note{border-left:4px solid var(--safety);padding:4px 0 4px 16px;color:var(--ink2);margin:0 0 20px;max-width:34em}
+@media(max-width:860px){.price{grid-template-columns:1fr}}
+.who{display:grid;grid-template-columns:260px minmax(0,1fr);gap:40px;align-items:center}
+.who img{width:100%;height:auto;display:block;border:2px solid var(--navy)}
+.who p{max-width:34em;color:var(--ink2)}
+@media(max-width:720px){.who{grid-template-columns:1fr}.who img{max-width:240px}}
+details{border-top:1px solid var(--rule);padding:14px 0;max-width:46em}
+details:last-child{border-bottom:1px solid var(--rule)}
+summary{cursor:pointer;font-weight:700;font-size:19px}
+details p{margin:8px 0 0;color:var(--ink2)}
+.gc{background:var(--navy);color:#fff;border-bottom:0}
+.gc h2{color:#fff}
+.gc p{color:#d6dce6;max-width:36em;margin:0 0 20px}
+.gc .btn.line{background:transparent;border-color:#fff;color:#fff}
+.cred{border:2px solid var(--navy);background:var(--sheet);padding:22px;display:grid;gap:6px}
+.cred b{font-size:24px;font-stretch:88%;color:var(--navy)}
+.cred span{color:var(--ink2);font-size:16px}
+footer{padding:28px 0 40px;color:var(--ink2);font-size:15px}
+footer .w{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px}
+
+.stamp{display:inline-block;background:#FFF4E8;border:1px dashed var(--safety);color:#8a4a0f;font-weight:700;font-size:14px;padding:6px 12px;border-radius:4px;letter-spacing:.03em}
+.doc{background:var(--sheet);border:1px solid var(--rule);border-radius:6px;padding:28px;margin:18px 0 8px;position:relative;overflow:hidden}
+.doc::after{content:"EJEMPLO";position:absolute;right:-30px;top:30px;transform:rotate(30deg);font-size:64px;font-weight:800;color:rgba(232,131,42,.10);pointer-events:none}
+.doc h3{margin:0 0 4px;color:var(--navy);font-stretch:90%}
+.doc .meta{color:var(--ink2);font-size:15px;margin:0 0 16px}
+.tw{overflow-x:auto}
+table.q{width:100%;border-collapse:collapse;font-size:15px;min-width:520px}
+table.q th,table.q td{border-bottom:1px solid var(--grid);padding:8px 6px;text-align:left;vertical-align:top}
+table.q th{color:var(--ink2);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.04em}
+table.q td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+table.q tr.tot td{font-weight:800;border-top:2px solid var(--navy)}
+.doc ul{margin:6px 0 14px;padding-left:20px;font-size:16px}
+.note{font-size:15px;color:var(--ink2)}
+section{padding:40px 0}
+h2{color:var(--navy);font-stretch:90%;font-size:clamp(26px,3.6vw,38px);margin:0 0 8px}
+</style>
+</head>
+<body>
+<header class="top"><div class="w">
+<a class="brand" href="/"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="60" fill="#13294B"/><line x1="40" y1="57" x2="40" y2="78" stroke="#fff" stroke-width="3"/><line x1="60" y1="50" x2="60" y2="78" stroke="#fff" stroke-width="3"/><line x1="80" y1="57" x2="80" y2="78" stroke="#fff" stroke-width="3"/><line x1="32" y1="78" x2="32" y2="94" stroke="#fff" stroke-width="5"/><line x1="88" y1="78" x2="88" y2="94" stroke="#fff" stroke-width="5"/><path d="M21 77 Q60 18 99 77" fill="none" stroke="#E8832A" stroke-width="7" stroke-linecap="round"/><line x1="14" y1="78" x2="106" y2="78" stroke="#fff" stroke-width="7" stroke-linecap="round"/></svg>Puente Bids</a>
+<nav class="links" aria-label="Principal"><a href="/cotizacion/">Cotización $49</a><a class="lang" href="/">Inicio</a></nav>
+</div></header>
+<div class="hero"><div class="w">
+<div>
+<span class="stamp">EJEMPLO · obra de muestra, números de muestra</span>
+<h1 style="margin-top:14px">Así le entregamos su cotización</h1>
+<p class="lead">Usted nos pasa la invitación del general. Nosotros sacamos las cantidades de los planos, usted pone su precio por unidad, y armamos la propuesta en inglés lista para el estimador.</p>
+<p class="lead" style="font-size:17px;margin-top:10px">Sample only: a made-up drywall job to show the format. Your proposal uses your plans and your prices.</p>
+<div class="ctas"><a class="btn main" href="https://wa.me/15809779155?text=Hola%2C%20tengo%20una%20obra%20para%20cotizar">Tengo una obra para cotizar</a><a class="btn line" href="/cotizacion/">Solo pasar mis números a inglés ($49)</a></div>
+</div>
+<aside class="tblock" aria-label="Precio"><div class="hd">Cotización por obra<span>PB-03</span></div><dl><dt>1 oficio</dt><dd class=money>$249</dd><dt>Varios oficios u obra grande</dt><dd class=money>$399</dd><dt>Cuándo paga</dt><dd>Cuando ve el total, antes de recibir la propuesta final</dd><dt>Usted pone</dt><dd>Su precio por unidad. Nosotros no inventamos números</dd><dt>Garantía</dt><dd>Si el general la rechaza por formato o por el inglés, le devolvemos su dinero</dd></dl></aside>
+</div></div>
+
+<section><div class="w">
+<h2>1. Resumen de cantidades (en español, para usted)</h2>
+<p class="note">Sacado de los planos de la obra. Usted revisa y pone su precio por unidad.</p>
+<div class="doc">
+<h3>Obra de muestra: oficina de 1 piso, 6,200 sf (tenant finish-out)</h3>
+<p class="meta">Oficio: drywall, framing de metal y ACT · Planos A-101, A-201, A-501, A-601 · Fecha límite del general: (la de su invitación)</p>
+<div class="tw"><table class="q">
+<tr><th>Partida</th><th>Cantidad</th><th>Unidad</th><th>Precio por unidad (usted)</th><th>Total</th></tr>
+<tr><td>Muro tipo A: stud 3-5/8" 20 ga, 1 capa 5/8" cada lado, hasta 10'-0"</td><td class=n>1,480</td><td>LF</td><td class=n>$__</td><td class=n>$__</td></tr>
+<tr><td>Muro tipo B: igual al A + aislamiento acústico, hasta deck (14'-0")</td><td class=n>420</td><td>LF</td><td class=n>$__</td><td class=n>$__</td></tr>
+<tr><td>Furring en muros de block exterior, 7/8" hat channel + 5/8"</td><td class=n>2,350</td><td>SF</td><td class=n>$__</td><td class=n>$__</td></tr>
+<tr><td>Soffit / bulkhead de drywall</td><td class=n>160</td><td>LF</td><td class=n>$__</td><td class=n>$__</td></tr>
+<tr><td>Cielo acústico (ACT) 2x2, grid 15/16"</td><td class=n>4,900</td><td>SF</td><td class=n>$__</td><td class=n>$__</td></tr>
+<tr><td>Cielo de drywall en baños y break room</td><td class=n>640</td><td>SF</td><td class=n>$__</td><td class=n>$__</td></tr>
+<tr><td>Acabado Nivel 4 en todo muro visible</td><td class=n>incluido</td><td>—</td><td class=n>—</td><td class=n>—</td></tr>
+<tr class=tot><td colspan=4>Total (con sus precios)</td><td class=n>$____</td></tr>
+</table></div>
+<p class="note" style="margin-top:12px"><b>Lo que vimos en los planos y le conviene saber:</b> el muro tipo B va hasta deck (más material y andamio); el plano A-601 pide puertas de 3 horas en el cuarto eléctrico (verificar si el marco va en su alcance); no hay especificación de nivel 5, así que se cotiza nivel 4.</p>
+</div>
+</div></section>
+
+<section style="padding-top:0"><div class="w">
+<h2>2. La propuesta en inglés (para el estimador)</h2>
+<p class="note">Esto es lo que le llega al general, con su logo y sus datos.</p>
+<div class="doc">
+<h3>PROPOSAL — Drywall, Metal Framing &amp; Acoustical Ceilings</h3>
+<p class="meta">To: [General Contractor], Attn: [Estimator] · Project: Sample Office Finish-Out (6,200 SF) · Based on drawings A-101, A-201, A-501, A-601 · Addenda: [#]</p>
+<p style="margin:0 0 6px"><b>Scope included</b></p>
+<ul>
+<li>Type A partitions: 3-5/8" 20 ga studs @ 16" o.c., one layer 5/8" Type X each side, to 10'-0" AFF — 1,480 LF</li>
+<li>Type B partitions: same as Type A with sound attenuation batts, full height to deck — 420 LF</li>
+<li>Furring at exterior CMU: 7/8" hat channel with 5/8" gypsum board — 2,350 SF</li>
+<li>Gypsum board soffits and bulkheads — 160 LF</li>
+<li>2x2 acoustical ceiling tile on 15/16" grid — 4,900 SF</li>
+<li>Gypsum board ceilings at restrooms and break room — 640 SF</li>
+<li>Level 4 finish at all exposed gypsum board surfaces</li>
+<li>Installation of hollow metal frames furnished by others</li>
+</ul>
+<p style="margin:0 0 6px"><b>Exclusions</b></p>
+<ul>
+<li>Paint, wall covering, FRP, and Level 5 finish</li>
+<li>Fire-rated doors, hardware, and supply of frames</li>
+<li>Insulation at exterior walls, firestopping, and caulking by others</li>
+<li>Bonds, permits, and after-hours work unless noted</li>
+</ul>
+<p style="margin:0 0 6px"><b>Clarifications</b></p>
+<ul>
+<li>Price is valid for 30 days. Work performed in one continuous mobilization.</li>
+<li>Clean, dry, and conditioned areas provided by GC prior to board hanging.</li>
+<li>Insurance certificate available on request.</li>
+</ul>
+<p style="margin:12px 0 0;font-size:20px"><b>Base Bid: $[su total]</b></p>
+<p class="note">Submitted by [Su compañía] · [Teléfono] · [Email]</p>
+</div>
+</div></section>
+
+<section style="padding-top:0"><div class="w">
+<h2>Cómo funciona</h2>
+<ol class="how">
+<li><h3>Nos pasa la invitación</h3><p>El link de BuildingConnected o los planos. Le confirmamos en el día si la podemos hacer a tiempo.</p></li>
+<li><h3>Le mandamos el resumen</h3><p>Cantidades de los planos. Usted pone su precio por unidad y ve el total.</p></li>
+<li><h3>Paga y la entregamos</h3><p>Con el pago le mandamos la propuesta final en inglés, lista para el estimador antes de la fecha.</p></li>
+</ol>
+<div class="ctas"><a class="btn main" href="https://wa.me/15809779155?text=Hola%2C%20tengo%20una%20obra%20para%20cotizar">Tengo una obra para cotizar</a><a class="btn line" href="mailto:puentebids@gmail.com?subject=Obra%20para%20cotizar">puentebids@gmail.com</a></div>
+<p class="note" style="margin-top:14px">No damos consejo legal ni vendemos seguros. Los precios los pone usted. Nunca le pedimos datos de banco ni Seguro Social por mensaje: solo se paga en el link oficial de Square.</p>
+</div></section>
+<footer><div class="w"><span>Puente Bids · 5802 Cedar Ridge Dr, Enid, OK 73703</span><span><a href="mailto:puentebids@gmail.com">puentebids@gmail.com</a> · Text (580) 977-9155</span></div></footer>
+</body>
+</html>
