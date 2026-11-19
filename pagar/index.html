@@ -12,7 +12,7 @@
 <meta property="og:title" content="Pagar — Puente Bids">
 <meta property="og:description" content="Pague con Square: $100 por trabajo confirmado, o la Oficina de Puente Bids, $249 al mes sin contrato.">
 <meta property="og:image" content="https://d2ol7oe51mr4n9.cloudfront.net/user_3IkWgim8q9eNQavxziL9vmwsNp2/65668f9b-f1ee-4323-b944-34b7bf84ad93.png">
-<meta property="og:url" content="https://puentebids.cloud/">
+<meta property="og:url" content="https://puentebids.cloud/pagar/">
 <link rel="icon" href="https://d2ol7oe51mr4n9.cloudfront.net/user_3IkWgim8q9eNQavxziL9vmwsNp2/65668f9b-f1ee-4323-b944-34b7bf84ad93.png">
 <meta name="theme-color" content="#13294B">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -94,26 +94,109 @@ details p{margin:8px 0 0;color:var(--ink2)}
 footer{padding:28px 0 40px;color:var(--ink2);font-size:15px}
 footer .w{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px}
 .paylist{margin-top:18px;display:grid;gap:10px}.payrow{display:flex;justify-content:space-between;align-items:center;gap:14px;background:#fff;border:2px solid #D5DAE1;border-radius:8px;padding:14px 16px}.payrow b{display:block;font-size:17px}.payrow span{display:block;font-size:15px;color:var(--ink2);margin-top:2px}.payrow .btn{white-space:nowrap;min-height:44px}@media(max-width:600px){.payrow{flex-direction:column;align-items:stretch}}
+
+.trust{display:flex;flex-wrap:wrap;gap:8px 18px;margin:18px 0 0;padding:0;list-style:none;font-size:16px;font-weight:600;color:var(--navy)}
+.trust li{display:flex;align-items:center;gap:8px}
+.trust li::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--safety);flex:none}
+.logo-big{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.logo-big svg{width:64px;height:64px}
+.logo-big span{font-weight:800;font-stretch:112%;font-size:24px;color:var(--navy)}
+.opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.opt{background:var(--sheet);border:2px solid var(--navy);border-radius:8px;padding:24px;display:flex;flex-direction:column}
+.opt .tag{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--ink2)}
+.opt h3{margin:4px 0 0;font-size:24px;font-stretch:90%;color:var(--navy)}
+.opt .amt{font-weight:800;font-stretch:85%;font-size:56px;line-height:1;color:var(--navy);margin:14px 0 4px}
+.opt .amt small{font-size:18px;font-stretch:100%;font-weight:600;color:var(--ink2);margin-left:6px}
+.opt .when{font-weight:700;margin:0 0 12px}
+.opt ul{margin:0 0 20px;padding:0 0 0 20px;color:var(--ink2);font-size:17px}
+.opt li{margin:5px 0}
+.opt .btn{margin-top:auto}
+.opt .sq{font-size:14px;color:var(--ink2);margin:10px 0 0;text-align:center}
+@media(max-width:760px){.opts{grid-template-columns:1fr}}
+.helpbox{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.helpbox div{border-top:4px solid var(--safety);padding-top:12px}
+.helpbox h3{margin:0 0 4px;font-size:19px}
+.helpbox p{margin:0;color:var(--ink2);font-size:17px}
+@media(max-width:720px){.helpbox{grid-template-columns:1fr}}
+.phone{font-weight:700;color:var(--navy);text-decoration:none;white-space:nowrap}
 </style>
 </head>
 <body>
 <header class="top"><div class="w">
 <a class="brand" href="/"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="60" fill="#13294B"/><line x1="40" y1="57" x2="40" y2="78" stroke="#fff" stroke-width="3"/><line x1="60" y1="50" x2="60" y2="78" stroke="#fff" stroke-width="3"/><line x1="80" y1="57" x2="80" y2="78" stroke="#fff" stroke-width="3"/><line x1="32" y1="78" x2="32" y2="94" stroke="#fff" stroke-width="5"/><line x1="88" y1="78" x2="88" y2="94" stroke="#fff" stroke-width="5"/><path d="M21 77 Q60 18 99 77" fill="none" stroke="#E8832A" stroke-width="7" stroke-linecap="round"/><line x1="14" y1="78" x2="106" y2="78" stroke="#fff" stroke-width="7" stroke-linecap="round"/></svg>Puente Bids</a>
-<nav class="links" aria-label="Principal"><a class="lang" href="/">Inicio</a></nav>
+<nav class="links" aria-label="Principal"><a href="/">Inicio</a><a class="phone" href="tel:+13464534523">(346) 453-4523</a></nav>
 </div></header>
+
 <div class="hero"><div class="w">
 <div>
-<h1>Pagar</h1>
-<p class="lead">Pague solo cuando ya le dijimos el trabajo y usted lo quiere. Todos los pagos son en la página oficial de Square, con tarjeta o desde su banco. El recibo le llega a su email.</p>
-<div class="paylist">
-<div class="payrow"><div><b>Trabajo confirmado · $100</b><span>Ya le dijimos dónde, qué, cuándo y cuánto paga. Paga antes de empezar y le pasamos el contacto. <i lang="en">Confirmed job: pay and we send you the contact.</i></span></div><a class="btn main" href="https://square.link/u/nITt6wvH">Pagar $100</a></div>
-<div class="payrow"><div><b>Oficina · $249 al mes, sin contrato</b><span>Todos los trabajos del mes sin los $100, más sus papeles en inglés. Cancela con un mensaje. <i lang="en">Office: every job that month plus your paperwork.</i></span></div><a class="btn main" href="https://square.link/u/z16jgIqj">Pagar $249</a></div>
+<div class="logo-big"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="60" fill="#13294B"/><line x1="40" y1="57" x2="40" y2="78" stroke="#fff" stroke-width="3"/><line x1="60" y1="50" x2="60" y2="78" stroke="#fff" stroke-width="3"/><line x1="80" y1="57" x2="80" y2="78" stroke="#fff" stroke-width="3"/><line x1="32" y1="78" x2="32" y2="94" stroke="#fff" stroke-width="5"/><line x1="88" y1="78" x2="88" y2="94" stroke="#fff" stroke-width="5"/><path d="M21 77 Q60 18 99 77" fill="none" stroke="#E8832A" stroke-width="7" stroke-linecap="round"/><line x1="14" y1="78" x2="106" y2="78" stroke="#fff" stroke-width="7" stroke-linecap="round"/></svg><span>Puente Bids</span></div>
+<h1>Pagar con Square</h1>
+<p class="lead">Solo paga cuando ya tiene un trabajo hablado y usted lo quiere. Sin trabajo, no paga nada.</p>
+<ul class="trust">
+<li>Pagos seguros con Square</li>
+<li>El recibo le llega a su correo</li>
+<li>Sin contrato</li>
+</ul>
 </div>
-<p style="margin-top:16px;font-size:16px;color:var(--ink2)">¿Dudas? Escriba a <a href="mailto:puentebids@gmail.com">puentebids@gmail.com</a>.</p>
-</div>
-<aside class="tblock" aria-label="Detalle del pago"><div class="hd">Detalle del pago<span>PB-01</span></div><dl><dt>Cómo paga</dt><dd>Tarjeta o banco, en la página oficial de Square</dd><dt>Recibo</dt><dd>Le llega a su email</dd><dt>Contrato</dt><dd>No hay. La Oficina se cancela con un mensaje</dd><dt>Sin trabajo</dt><dd>No paga nada</dd></dl></aside>
+<aside class="tblock" aria-label="Datos del pago"><div class="hd">Datos del pago<span>PB</span></div><dl>
+<dt>Dónde paga</dt><dd>En la página oficial de Square</dd>
+<dt>Cómo</dt><dd>Tarjeta de débito o crédito</dd>
+<dt>Recibo</dt><dd>Square se lo manda a su correo</dd>
+<dt>Contrato</dt><dd>No hay. La Oficina se cancela con un mensaje</dd>
+<dt>Dudas</dt><dd><a class="phone" href="tel:+13464534523">(346) 453-4523</a></dd>
+</dl></aside>
 </div></div>
-<section><div class="w"><h2>Su seguridad</h2><p class="intro">Nunca le pedimos datos de tarjeta, banco ni Seguro Social por mensaje. Solo se paga en el link oficial de Square. Nosotros no vemos su tarjeta.</p></div></section>
-<footer><div class="w"><span>Puente Bids</span><span><a href="mailto:puentebids@gmail.com">puentebids@gmail.com</a> · <a href="/privacy/">Privacy</a></span></div></footer>
+
+<section id="opciones"><div class="w">
+<h2>Escoja una opción</h2>
+<p class="intro">Las dos le dan el contacto de quien da el trabajo. La diferencia es cuántos trabajos quiere y si quiere que le llevemos los papeles en inglés.</p>
+<div class="opts">
+<div class="opt">
+<span class="tag">Un trabajo</span>
+<h3>Trabajo confirmado</h3>
+<div class="amt">$100<small>por trabajo</small></div>
+<p class="when">Se paga antes de empezar, una sola vez por ese trabajo.</p>
+<ul>
+<li>Un trabajo ya hablado: qué es, dónde, cuándo empieza y cuánto paga</li>
+<li>El contacto de quien da el trabajo, después del pago</li>
+<li>Usted cobra el trabajo directo a quien se lo da</li>
+</ul>
+<a class="btn main" href="https://square.link/u/nITt6wvH">Pagar $100 en Square</a>
+<p class="sq">Se abre la página segura de Square.</p>
+</div>
+<div class="opt">
+<span class="tag">Todo el mes</span>
+<h3>Oficina</h3>
+<div class="amt">$249<small>al mes</small></div>
+<p class="when">Factura de Square cada mes. Sin contrato: se cancela con un mensaje.</p>
+<ul>
+<li>Todos los trabajos del mes, sin pagar los $100 de cada uno</li>
+<li>Sus papeles en inglés: registros de vendor, COI, W-9 y lien waivers</li>
+<li>Le ayudamos con las cotizaciones en inglés</li>
+</ul>
+<a class="btn main" href="mailto:puentebids@gmail.com?subject=Oficina%20Puente%20Bids">Pedir la Oficina</a>
+<p class="sq">Se cobra con factura mensual de Square a su correo, con el nombre de su compañía.</p>
+</div>
+</div>
+</div></section>
+
+<section id="despues"><div class="w">
+<h2>Qué pasa después de pagar</h2>
+<ol class="how">
+<li><h3>Le llega el recibo</h3><p>Square le manda el recibo a su correo. Ahí queda la fecha, el monto y el nombre Puente Bids.</p></li>
+<li><h3>Le confirmamos</h3><p>Le escribimos el mismo día por el mismo medio donde estamos hablando.</p></li>
+<li><h3>Empieza a trabajar</h3><p>Trabajo confirmado: le pasamos el contacto y la dirección. Oficina: además empezamos con sus papeles.</p></li>
+</ol>
+</div></section>
+
+<section id="seguridad"><div class="w">
+<h2>Su seguridad</h2>
+<div class="helpbox">
+<div><h3>Nosotros no vemos su tarjeta</h3><p>El pago se hace en Square, no en esta página. Nunca le pedimos datos de tarjeta, banco o Seguro Social por mensaje.</p></div>
+<div><h3>¿Tiene dudas antes de pagar?</h3><p>Deje un mensaje al <a class="phone" href="tel:+13464534523">(346) 453-4523</a> o escriba a <a href="mailto:puentebids@gmail.com">puentebids@gmail.com</a>. Le contestamos el mismo día.</p></div>
+</div>
+</div></section>
+
+<footer><div class="w"><span>Puente Bids · 6220 Westpark Dr, Ste 149 E422, Houston, TX 77057</span><span><a href="mailto:puentebids@gmail.com">puentebids@gmail.com</a> · <a href="/privacy/">Privacy</a></span></div></footer>
 </body>
 </html>
